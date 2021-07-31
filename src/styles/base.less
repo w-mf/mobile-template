@@ -1,0 +1,40 @@
+body {
+  font-size: 16px;
+}
+
+.page-go-enter-active,
+.page-go-leave-active,
+.page-back-enter-active,
+.page-back-leave-active {
+  position: fixed;
+  width: 100%;
+  transition: all .3s;
+}
+.page-go-enter-from {
+  transform: translateX(100%);
+}
+.page-go-enter-to{
+  transform: translateX(0);
+  box-shadow:-2px 1px 4px #ccc;
+}
+.page-go-leave-from{
+  transform: translateX(0);
+}
+.page-go-leave-to{
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+// 回退
+.page-back-enter-from {
+  transform: translateX(-100%);
+}
+.page-back-enter-to{
+  transform: translateX(0);
+}
+.page-back-leave-from{
+  transform: translateX(0);
+}
+.page-back-leave-to{
+  transform: translateX(100%);
+}
