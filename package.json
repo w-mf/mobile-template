@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
-    "vant": "^3.1.4",
+    "vant": "^3.1.5",
     "vue": "^3.0.5",
     "vue-router": "^4.0.10",
     "vuex": "^4.0.2"
