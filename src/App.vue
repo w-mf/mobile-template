@@ -25,6 +25,7 @@
 import { defineComponent } from 'vue';
 import { Button } from 'vant';
 import { useRouter } from 'vue-router';
+import {postVrList} from './api';
 
 export default defineComponent({
   name: 'App',
@@ -36,6 +37,9 @@ export default defineComponent({
     const go = (path:string) => {
       router.push(path);
     };
+    postVrList({
+      plantId: 1,
+    }).then((res) => (res.length ? res[0].id : ''));
     return {
       go,
     };
