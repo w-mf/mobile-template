@@ -8,7 +8,6 @@ function getRequestFunctionName(interfaceInfo:ExtendedInterface, changeCase: Cha
         _${interfaceInfo.parsedPath.name}`;
   return changeCase.camelCase(name);
 }
-
 export default defineConfig([
   {
     serverUrl: 'http://yapi.smart-xwork.cn/',
